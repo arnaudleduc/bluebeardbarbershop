@@ -36,6 +36,7 @@
   font-size: 25px;
   border: none;
   background-color: rgb(74, 135, 248);
+  transition: background-color 0.5s;
 }
 
 .contact button:hover {

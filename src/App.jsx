@@ -5,14 +5,22 @@ import Advices from "./components/advices/advices";
 import Footer from "./components/footer/footer";
 import Contact from "./components/contact/contact";
 
+import useNavBarStore from "./stores/useNavBar";
+
 function App() {
+  const { page } = useNavBarStore();
+
   return (
     <>
       <Header />
-      {/* <Index />
-      <Localisation />
-      <Advices /> */}
-      <Contact />
+      {page === "index" && (
+        <>
+          <Index />
+          <Localisation />
+          <Advices />
+        </>
+      )}
+      {page === "contact" && <Contact />}
       <Footer />
     </>
   );

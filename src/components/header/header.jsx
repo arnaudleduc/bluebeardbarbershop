@@ -1,6 +1,11 @@
+import useNavBarStore from "../../stores/useNavBar";
+
 import "./header.css";
 
-const header = () => {
+const Header = () => {
+  const { pageToProducts, pageToAdvices, pageToContact, pageToIndex } =
+    useNavBarStore();
+
   return (
     <>
       <div className="promotion">
@@ -13,13 +18,14 @@ const header = () => {
           alt="Blue Beard Barber Shop"
         />
         <nav>
-          <button>PRODUITS</button>
-          <button>CONSEILS</button>
-          <button>CONTACT</button>
+          <button onClick={pageToIndex}>ACCUEIL</button>
+          <button onClick={pageToProducts}>PRODUITS</button>
+          <button onClick={pageToAdvices}>CONSEILS</button>
+          <button onClick={pageToContact}>CONTACT</button>
         </nav>
       </header>
     </>
   );
 };
 
-export default header;
+export default Header;
