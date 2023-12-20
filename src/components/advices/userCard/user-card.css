@@ -5,7 +5,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 3px 5px #000000;
+  box-shadow: 1px 1px 0px #000000;
 }
 
 .user-card-id {
@@ -18,7 +18,6 @@
   width: 100px;
   border-radius: 50%;
   margin-right: 20px;
-  filter: drop-shadow(1px 1px 2px #000000);
 }
 
 .user-card-id h3 {
@@ -37,7 +36,7 @@
 
 .user-card-notation-stars img {
   width: 30px;
-  filter: drop-shadow(1px 1px 1px #000000);
+  /* filter: drop-shadow(1px 1px 1px #000000); */
 }
 
 .user-card-notation-date {

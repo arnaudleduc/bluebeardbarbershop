@@ -19,6 +19,9 @@
   margin-bottom: 40px;
   font-family: "Passion One";
   font-size: 25px;
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .contact textarea {
@@ -27,6 +30,9 @@
   margin-bottom: 40px;
   font-family: "Passion One";
   font-size: 25px;
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .contact button {
@@ -37,6 +43,7 @@
   border: none;
   background-color: rgb(235, 159, 19);
   transition: background-color 0.5s;
+  border-radius: 10px;
 }
 
 .contact button:hover {

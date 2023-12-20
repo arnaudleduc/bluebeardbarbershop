@@ -50,14 +50,20 @@
 .localisation-text-input input {
   width: 300px;
   margin-right: 10px;
-  font-size: 40px;
+  padding: 7px 15px;
+  font-size: 30px;
   color: #000000;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .localisation-text-input button {
   height: 50px;
   font-size: 30px;
+  padding: 0px 15px;
   color: #000000;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .localisation iframe {
