@@ -1,0 +1,68 @@
+.localisation {
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(74, 135, 248);
+}
+
+.localisation-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.localisation-text,
+.localisation-text button,
+.localisation-text input {
+  font-family: "Passion One";
+  color: white;
+}
+
+.localisation-text h2 {
+  margin: 0;
+  font-size: 70px;
+  text-shadow: 4px 4px 6px #000000;
+}
+
+.localisation-text p {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 40px;
+  text-shadow: 4px 4px 6px #000000;
+}
+
+.localisation-text span {
+  font-style: italic;
+}
+
+.localisation-text label {
+  font-size: 40px;
+  text-shadow: 4px 4px 6px #000000;
+}
+
+.localisation-text-input {
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.localisation-text-input input {
+  width: 300px;
+  margin-right: 10px;
+  font-size: 40px;
+  color: #000000;
+}
+
+.localisation-text-input button {
+  height: 50px;
+  font-size: 30px;
+  color: #000000;
+}
+
+.localisation iframe {
+  height: 350px;
+  width: 600px;
+  border: none;
+  border-radius: 15px;
+}

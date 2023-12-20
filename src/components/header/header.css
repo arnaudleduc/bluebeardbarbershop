@@ -1,0 +1,41 @@
+.promotion {
+  height: 30px;
+  margin: 5px 0px;
+  font-family: "Passion One";
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.promotion p {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(74, 135, 248);
+}
+
+.header nav {
+  width: 35%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header button {
+  width: 30%;
+  font-family: "Passion One";
+  font-size: 35px;
+  border: none;
+  background-color: rgb(74, 135, 248);
+  transition: background-color 1s;
+}
+
+.header button:hover {
+  height: 100%;
+  cursor: pointer;
+  background-color: rgb(105, 155, 248);
+}
