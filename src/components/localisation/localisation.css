@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgb(74, 135, 248);
+  background-color: #eb9f13;
 }
 
 .localisation-text {
@@ -21,14 +21,14 @@
 .localisation-text h2 {
   margin: 0;
   font-size: 70px;
-  text-shadow: 4px 4px 6px #000000;
+  text-shadow: 3px 3px 0px #000000;
 }
 
 .localisation-text p {
   margin: 0;
   margin-bottom: 50px;
   font-size: 40px;
-  text-shadow: 4px 4px 6px #000000;
+  text-shadow: 3px 3px 0px #000000;
 }
 
 .localisation-text span {
@@ -37,7 +37,7 @@
 
 .localisation-text label {
   font-size: 40px;
-  text-shadow: 4px 4px 6px #000000;
+  text-shadow: 3px 3px 0px #000000;
 }
 
 .localisation-text-input {

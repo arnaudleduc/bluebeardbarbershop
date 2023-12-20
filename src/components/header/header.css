@@ -15,7 +15,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(74, 135, 248);
+  background-color: rgb(235, 159, 19);
+}
+
+.header .logo {
+  width: 550px;
 }
 
 .header nav {
@@ -30,12 +34,12 @@
   font-family: "Passion One";
   font-size: 35px;
   border: none;
-  background-color: rgb(74, 135, 248);
+  background-color: rgb(235, 159, 19);
   transition: background-color 1s;
 }
 
 .header button:hover {
   height: 100%;
   cursor: pointer;
-  background-color: rgb(105, 155, 248);
+  background-color: rgb(247, 201, 52);
 }
