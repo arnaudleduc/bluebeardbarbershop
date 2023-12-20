@@ -1,0 +1,44 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.contact h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Passion One";
+  font-size: 80px;
+  color: black;
+}
+
+.contact input {
+  width: 400px;
+  height: 50px;
+  margin-bottom: 40px;
+  font-family: "Passion One";
+  font-size: 30px;
+}
+
+.contact textarea {
+  width: 400px;
+  height: 200px;
+  margin-bottom: 40px;
+  font-family: "Passion One";
+  font-size: 30px;
+}
+
+.contact button {
+  width: 200px;
+  height: 50px;
+  font-family: "Passion One";
+  font-size: 25px;
+  border: none;
+  background-color: rgb(74, 135, 248);
+}
+
+.contact button:hover {
+  cursor: pointer;
+  background-color: rgb(105, 155, 248);
+}

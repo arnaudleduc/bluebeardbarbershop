@@ -1,0 +1,47 @@
+.footer {
+  height: 200px;
+  background-color: rgb(74, 135, 248);
+  font-family: "Passion One";
+}
+
+.footer .logo {
+  width: 350px;
+  margin-left: 40px;
+}
+
+.footer ul {
+  padding: 0;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.footer li {
+  list-style-type: none;
+  font-family: "Passion One";
+  font-size: 35px;
+  margin-right: 50px;
+}
+
+.footer li a {
+  width: 150px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer li a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 50px 0px 0px 40px;
+}
+
+.footer p a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer p a:hover {
+  text-decoration: underline;
+}
