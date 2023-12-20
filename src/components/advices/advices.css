@@ -1,0 +1,16 @@
+.advices {
+  height: 500px;
+  font-family: "Passion One";
+}
+
+.advices h2 {
+  margin: 20px 0px 20px 50px;
+  color: white;
+  font-size: 70px;
+  text-shadow: 4px 4px 6px #000000;
+}
+
+.advices-cards {
+  display: flex;
+  justify-content: space-evenly;
+}

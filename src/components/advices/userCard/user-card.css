@@ -1,0 +1,51 @@
+.user-card {
+  height: 320px;
+  width: 28%;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 3px 5px #000000;
+}
+
+.user-card-id {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-card-picture {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  filter: drop-shadow(1px 1px 2px #000000);
+}
+
+.user-card-id h3 {
+  margin: 0;
+  font-size: 60px;
+}
+
+.user-card-notation {
+  display: flex;
+  align-items: baseline;
+}
+
+.user-card-notation-stars {
+  margin-right: 20px;
+}
+
+.user-card-notation-stars img {
+  width: 30px;
+  filter: drop-shadow(1px 1px 1px #000000);
+}
+
+.user-card-notation-date {
+  margin: 0;
+  color: #888888;
+  font-size: 18px;
+}
+
+.user-card-comment {
+  font-size: 24px;
+}
