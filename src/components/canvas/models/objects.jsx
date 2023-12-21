@@ -22,7 +22,6 @@ export function Objects(props) {
   });
 
   useEffect(() => {
-    console.log(insidePole.current);
     const introAnimation = actions.objectsAnimation;
     introAnimation.clampWhenFinished = true;
     introAnimation.repetitions = 0;

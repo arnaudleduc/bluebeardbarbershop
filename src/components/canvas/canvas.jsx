@@ -22,7 +22,7 @@ const Hero = () => {
   const blueSpot = useRef();
   const whiteSpot = useRef();
   const [button, setButton] = useState(false);
-  const { pageToIndex } = useNavBarStore();
+  const { pageToIndex, setInProp } = useNavBarStore();
 
   //   useHelper(mainCamera, THREE.CameraHelper, "red");
   //   useHelper(redSpot, THREE.SpotLightHelper, "red");
@@ -84,7 +84,10 @@ const Hero = () => {
       <Html wrapperClass="enter-website">
         <button
           className={button ? "enter-website-button" : "disabled"}
-          onClick={pageToIndex}
+          onClick={() => {
+            pageToIndex();
+            setInProp();
+          }}
         >
           Entrer
         </button>

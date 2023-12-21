@@ -18,6 +18,12 @@ const useNavBarStore = create((set) => ({
     set(() => ({
       page: "index",
     })),
+
+  inProp: false,
+  setInProp: () =>
+    set(() => ({
+      inProp: true,
+    })),
 }));
 
 export default useNavBarStore;
