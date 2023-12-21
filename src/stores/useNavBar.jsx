@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const useNavBarStore = create((set) => ({
-  page: "index",
+  page: "canvas",
   pageToProducts: () =>
     set(() => ({
       page: "products",

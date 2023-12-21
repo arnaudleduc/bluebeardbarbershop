@@ -1,0 +1,29 @@
+/* .enter-website {
+  width: 100vw;
+} */
+
+.disabled {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.enter-website-button {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  top: 50px;
+  right: 50px;
+  width: 250px;
+  height: 70px;
+  font-family: "Passion One";
+  font-size: 30px;
+  border: none;
+  background-color: rgb(235, 159, 19);
+  transition: background-color 0.5s, opacity 2.5s;
+  border-radius: 10px;
+}
+
+.enter-website-button:hover {
+  cursor: pointer;
+  background-color: rgb(247, 201, 52);
+}
