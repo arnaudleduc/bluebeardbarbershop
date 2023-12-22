@@ -1,12 +1,11 @@
 /* eslint-disable react/no-unknown-property */
 import {
   Html,
-  OrbitControls,
   PerspectiveCamera,
-  useHelper,
+  // useHelper,
 } from "@react-three/drei";
 import { useEffect, useRef, useState } from "react";
-import * as THREE from "three";
+// import * as THREE from "three";
 
 import { Objects } from "./models/objects";
 import { Band } from "./models/band";
@@ -17,7 +16,7 @@ import useNavBarStore from "../../stores/useNavBar";
 
 const Hero = () => {
   const mainCamera = useRef();
-  const orbitCamera = useRef();
+
   const redSpot = useRef();
   const blueSpot = useRef();
   const whiteSpot = useRef();
@@ -45,7 +44,6 @@ const Hero = () => {
 
   return (
     <>
-      {/* <axesHelper /> */}
       <PerspectiveCamera
         ref={mainCamera}
         makeDefault
@@ -54,8 +52,6 @@ const Hero = () => {
         far={170}
         fov={11}
       />
-      {/* <OrbitControls ref={orbitCamera} makeDefault /> */}
-      {/* <ambientLight /> */}
       <spotLight
         ref={redSpot}
         position={[1, 0.5, 4]}

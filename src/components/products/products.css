@@ -1,0 +1,83 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.products-card {
+  height: 320px;
+  width: 350px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 0px #000000;
+  font-family: "Passion One";
+}
+
+.products-card-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.products-card-img {
+  width: 200px;
+}
+
+.products-card-img-more {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-card-img-more-fr,
+.products-card-img-more-vegan {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.products-card-title {
+  display: inline-block;
+  margin: 0;
+  max-width: 400px;
+  font-size: 25px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* overflow: hidden; */
+}
+
+.products-card-notation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+
+.products-card-notation-container {
+  display: flex;
+  align-items: center;
+}
+
+.products-card-notation p {
+  margin: 0;
+  margin-right: 8px;
+}
+
+.products-card-notation-reviews {
+  align-self: flex-end;
+}
+
+.products-card-notation-star {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.products-card-price {
+  font-size: 35px;
+}

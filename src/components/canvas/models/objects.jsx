@@ -1,13 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { useEffect, useRef } from "react";
-import {
-  useGLTF,
-  useAnimations,
-  MeshTransmissionMaterial,
-  Float,
-  useProgress,
-} from "@react-three/drei";
-import { useControls } from "leva";
+import { useGLTF, useAnimations, Float } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export function Objects(props) {
@@ -27,10 +20,6 @@ export function Objects(props) {
     introAnimation.clampWhenFinished = true;
     introAnimation.repetitions = 0;
     introAnimation.play();
-    // progress === 100 &&
-    //   setTimeout(() => {
-    //     introAnimation.play();
-    //   }, 2000);
   }, []);
 
   return (

@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useRef } from "react";
+import { Suspense, useRef } from "react";
 import { Loader } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Transition } from "react-transition-group";
@@ -6,10 +6,11 @@ import { Transition } from "react-transition-group";
 import Header from "./components/header/header";
 import Index from "./components/index/index";
 import Localisation from "./components/localisation/localisation";
-import Advices from "./components/advices/advices";
+import Reviews from "./components/reviews/reviews";
 import Footer from "./components/footer/footer";
 import Contact from "./components/contact/contact";
 import Hero from "./components/canvas/canvas";
+import Products from "./components/products/products.jsx";
 
 import "./app.css";
 
@@ -104,10 +105,11 @@ function App() {
               <>
                 <Index />
                 <Localisation />
-                <Advices />
+                <Reviews />
               </>
             )}
             {page === "contact" && <Contact />}
+            {page === "products" && <Products />}
             <Footer />
           </div>
         )}

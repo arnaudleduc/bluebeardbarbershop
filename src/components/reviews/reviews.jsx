@@ -1,8 +1,8 @@
 import UserCard from "./userCard/userCard";
 
-import "./advices.css";
+import "./reviews.css";
 
-const advices = () => {
+const Reviews = () => {
   return (
     <section className="advices">
       <h2>Vos avis</h2>
@@ -13,4 +13,4 @@ const advices = () => {
   );
 };
 
-export default advices;
+export default Reviews;
