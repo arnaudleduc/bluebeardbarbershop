@@ -5,6 +5,7 @@ import {
   useAnimations,
   MeshTransmissionMaterial,
   Float,
+  useProgress,
 } from "@react-three/drei";
 import { useControls } from "leva";
 import { useFrame } from "@react-three/fiber";
@@ -18,7 +19,7 @@ export function Objects(props) {
   const { actions } = useAnimations(animations, group);
 
   useFrame((state, delta) => {
-    insidePole.current.rotation.y += delta * 1.8;
+    insidePole.current.rotation.y += delta * 1.5;
   });
 
   useEffect(() => {
@@ -26,6 +27,10 @@ export function Objects(props) {
     introAnimation.clampWhenFinished = true;
     introAnimation.repetitions = 0;
     introAnimation.play();
+    // progress === 100 &&
+    //   setTimeout(() => {
+    //     introAnimation.play();
+    //   }, 2000);
   }, []);
 
   return (
@@ -33,24 +38,24 @@ export function Objects(props) {
       <group name="Scene">
         <group name="crown" position={[-0.009, 0.422, -0.006]}>
           <mesh
-            name="Mesh_4"
+            name="Circle003"
             castShadow
             receiveShadow
-            geometry={nodes.Mesh_4.geometry}
+            geometry={nodes.Circle003.geometry}
             material={materials.gold}
           />
           <mesh
-            name="Mesh_5"
+            name="Circle003_1"
             castShadow
             receiveShadow
-            geometry={nodes.Mesh_5.geometry}
+            geometry={nodes.Circle003_1.geometry}
             material={materials.fabric}
           />
           <mesh
-            name="Mesh_6"
+            name="Circle003_2"
             castShadow
             receiveShadow
-            geometry={nodes.Mesh_6.geometry}
+            geometry={nodes.Circle003_2.geometry}
             material={materials.pearl}
           />
         </group>
@@ -154,8 +159,9 @@ export function Objects(props) {
           castShadow
           receiveShadow
           geometry={nodes.pole.geometry}
-          material={materials.alu}
+          material={materials.metalDark}
           position={[0, -0.21, 0]}
+          rotation={[0, 1.396, 0]}
         />
         <mesh
           ref={insidePole}
@@ -165,27 +171,8 @@ export function Objects(props) {
           geometry={nodes.rendAndBlue.geometry}
           material={materials.barberPole}
           position={[0, -0.21, 0]}
+          rotation={[0, 1.396, 0]}
         />
-        <mesh
-          name="glass"
-          castShadow
-          receiveShadow
-          geometry={nodes.glass.geometry}
-          position={[0, -0.322, 0]}
-        >
-          <MeshTransmissionMaterial
-            samples={10}
-            resolution={2048}
-            transmission={0.95}
-            roughness={0}
-            thickness={0.04}
-            ior={0.97}
-            chromaticAberration={0.02}
-            anisotropy={0.19}
-            clearcoat={0.37}
-            // color={"#c1b4b4"}
-          />
-        </mesh>
       </group>
     </group>
   );

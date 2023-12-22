@@ -73,7 +73,7 @@ const Hero = () => {
       <spotLight
         ref={whiteSpot}
         position={[3, 1, 0]}
-        intensity={50}
+        intensity={80}
         color={"#ffe4d1"}
         distance={4.5}
       />
