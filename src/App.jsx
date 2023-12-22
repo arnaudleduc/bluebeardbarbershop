@@ -20,15 +20,16 @@ function App() {
   const nodeRef = useRef(null);
   const canvasRef = useRef(null);
 
-  const duration = 1000;
+  const durationOut = 1000;
+  const durationIn = 3000;
 
   const defaultComponentStyle = {
-    transition: `opacity ${duration}ms ease-in-out`,
+    transition: `opacity ${durationIn}ms ease-in-out`,
     opacity: 0,
   };
 
   const defaultCanvasStyle = {
-    transition: `opacity ${duration}ms ease-in-out`,
+    transition: `opacity ${durationOut}ms ease-in-out`,
     opacity: 0,
     width: "100%",
     height: "100%",
@@ -62,7 +63,7 @@ function App() {
       <Transition
         nodeRef={canvasRef}
         in={!inProp}
-        timeout={duration}
+        timeout={durationOut}
         unmountOnExit
       >
         {(state) => (
@@ -83,7 +84,12 @@ function App() {
         )}
       </Transition>
 
-      <Transition nodeRef={nodeRef} in={inProp} timeout={duration} mountOnEnter>
+      <Transition
+        nodeRef={nodeRef}
+        in={inProp}
+        timeout={durationIn}
+        mountOnEnter
+      >
         {(state) => (
           <div
             ref={nodeRef}
