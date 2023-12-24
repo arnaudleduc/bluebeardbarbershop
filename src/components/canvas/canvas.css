@@ -21,6 +21,10 @@
   background-color: rgb(235, 159, 19);
   transition: background-color 0.5s, opacity 2.5s;
   border-radius: 10px;
+  @media screen and (max-width: 376px) {
+    width: 150px;
+    right: 70px;
+  }
 }
 
 .enter-website-button:hover {

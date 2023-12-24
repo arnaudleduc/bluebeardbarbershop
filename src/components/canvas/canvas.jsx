@@ -22,6 +22,7 @@ const Hero = () => {
   const whiteSpot = useRef();
   const [button, setButton] = useState(false);
   const { pageToIndex, setInProp } = useNavBarStore();
+  const isUserOnMobile = window.innerWidth <= 375 && true
 
   //   useHelper(mainCamera, THREE.CameraHelper, "red");
   //   useHelper(redSpot, THREE.SpotLightHelper, "red");
@@ -47,7 +48,7 @@ const Hero = () => {
       <PerspectiveCamera
         ref={mainCamera}
         makeDefault
-        position={[10, 1, 0]}
+        position={!isUserOnMobile ? [10, 1, 0] : [13, 1, 0]}
         near={0.1}
         far={170}
         fov={11}
